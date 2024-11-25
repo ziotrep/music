@@ -1,0 +1,222 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures body takes up full height of the viewport */
+  background-color: #121212;
+  color: #d4a373;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title Section */
+.title-section {
+  margin: 20px 0;
+}
+
+.title-section h1 {
+  font-size: 3em;
+  color: #d4a373;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Image Section */
+.image-section {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #d4a373;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Links */
+.nav-links {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  flex-wrap: wrap; /* Enable wrapping on smaller screens */
+  gap: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.nav-links ul li {
+  display: inline;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #d4a373;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: #ffffff;
+}
+
+/* Social Media Icons */
+.nav-links div a img {
+  width: 25px; /* Icons will shrink proportionally */
+  height: 25px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.nav-links div a img:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Countdown Section */
+.countdown-section {
+  margin: 40px 20px; /* Add padding for smaller screens */
+}
+
+.countdown-section h2 {
+  color: #ffffff;
+}
+
+#countdown {
+  font-size: 1.8em;
+  color: #d4a373;
+}
+
+#countdown span {
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+  margin: 40px auto;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+#contact p, #contact a {
+  font-size: 1.2em;
+  color: #d4a373;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  padding: 20px 0; /* Increased padding for better spacing */
+  color: #ffffff;
+  text-align: center;
+  margin-top: auto; /* Push footer to the bottom of the content */
+}
+
+footer .footer-text {
+  margin-top: 10px;
+  font-size: 0.9em; /* Adjust font size for footer text */
+  color: #d4a373; /* Matches the site's sepia tone */
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Title Section */
+  .title-section h1 {
+    font-size: 2.5em;
+  }
+
+  /* Navigation Links */
+  .nav-links ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links ul li a {
+    font-size: 1em;
+  }
+
+  /* Image Section */
+  .image-section img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  /* Countdown Section */
+  #countdown {
+    font-size: 1.5em;
+  }
+
+  /* Social Media Icons */
+  .nav-links div a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Contact Section */
+  #contact h2 {
+    font-size: 1.8em;
+  }
+
+  #contact p, #contact a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Title Section */
+  .title-section h1 {
+    font-size: 2em;
+  }
+
+  /* Navigation Links */
+  .nav-links ul {
+    flex-direction: column; /* Stack links vertically */
+    gap: 5px;
+  }
+
+  .nav-links ul li a {
+    font-size: 0.9em;
+  }
+
+  /* Social Media Icons */
+  .nav-links div a img {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Countdown Section */
+  #countdown {
+    font-size: 1.2em;
+  }
+
+  /* Contact Section */
+  #contact h2 {
+    font-size: 1.5em;
+  }
+
+  #contact p, #contact a {
+    font-size: 0.9em;
+  }
+}
