@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact ZioTrep</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline CSS für Demonstration */
+    .spotify-album {
+      max-width: 600px; /* Maximale Breite */
+      margin: 20px auto; /* Zentriert den Block horizontal */
+      padding: 10px; /* Optional: Innenabstand */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Schatten */
+      border-radius: 12px; /* Abgerundete Ecken */
+    }
+
+    .spotify-album iframe {
+      width: 100%; /* Volle Breite des Containers */
+      border-radius: 12px; /* Abgerundete Ecken */
+      margin-bottom: 20px; /* Abstand zwischen den iframes */
+    }
+
+    .album-description {
+      text-align: center;
+      margin-bottom: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    .spotify-album iframe:last-child {
+      margin-bottom: 0; /* Entfernt den Abstand beim letzten iframe */
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="title-section">
+      <h1>ZioTrep Music</h1>
+    </section>
+
+    <!-- Spotify Embed Block mit Beschreibungen -->
+    <section class="spotify-album">
+      <div class="album-description">
+        <h2>Lofi Album</h2>
+        <p>Perfekt geeignet zum Lernen und Entspannen.</p>
+      </div>
+      <iframe src="https://open.spotify.com/embed/album/707yWq4tAS3LwF5PayjdUl?utm_source=generator" 
+              height="352" frameBorder="0" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy"></iframe>
+    
+      <div class="album-description">
+        <h2>Weihnachtssingle</h2>
+        <p>Unsere Single für eine perfekte Weihnachtsstimmung!</p>
+      </div>
+      <iframe src="https://open.spotify.com/embed/album/2oNyzRAS1a4WlLyE5W9vE9?utm_source=generator" 
+              height="352" frameBorder="0" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy"></iframe>
+    </section>
+    <!-- Navigation -->
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#album">Album</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Social Media Icons -->
+      <div>
+        <a href="#" target="_blank"><img src="/img/icons/instagram.png" alt="Instagram"></a>
+        <a href="#" target="_blank"><img src="/img/icons/tik-tok.png" alt="TikTok"></a>
+        <a href="#" target="_blank"><img src="/img/icons/spotify.png" alt="Spotify"></a>
+        <a href="#" target="_blank"><img src="/img/icons/youtube.png" alt="YouTube"></a>
+        <a href="#" target="_blank"><img src="/img/icons/apple.png" alt="Apple Music"></a>
+      </div>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-text">
+      <p>&copy; 2024 ZioTrep. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

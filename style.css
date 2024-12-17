@@ -220,3 +220,37 @@ footer p {
     font-size: 0.9em;
   }
 }
+
+/* Spotify Album Styling */
+.spotify-album {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: #1f1f1f; /* Dunkelgrauer Hintergrund */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.album-description h2 {
+  font-size: 1.5em;
+  color: #f0c27b; /* Heller Goldton für Titel */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.album-description p {
+  font-size: 1em;
+  color: #e4d7c5; /* Dezenter Creme-Ton für Beschreibung */
+  margin-bottom: 10px;
+}
+
+.spotify-album iframe {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background-color: black; /* Leichtes Grau für Spotify-Player */
+}
+
+.spotify-album iframe:last-child {
+  margin-bottom: 0;
+}
